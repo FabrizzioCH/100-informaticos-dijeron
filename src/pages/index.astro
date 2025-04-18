@@ -1,11 +1,18 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
 ---
 
 <Layout>
-	<Welcome />
+    <h1 class="text-center text-4xl">Lista de preguntas</h1>
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+		<a href="/preguntas/pregunta1" class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition">
+			Pregunta 1
+		</a>
+		<a href="/preguntas/pregunta2" class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition">
+			Pregunta 2
+		</a>
+		<a href="/preguntas/pregunta3" class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition">
+			Pregunta 3
+		</a>
 </Layout>

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Fira Code', monospace;
+}
+
+button {
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
